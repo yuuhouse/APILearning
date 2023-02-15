@@ -55,3 +55,8 @@ h3 {
   font-size: 2rem;
   font-family: 'Bebas Neue', cursive;
 }
+
+p{
+  bottom: 0;
+  position: fixed;
+}
