@@ -7,54 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="index.js"></script>
-    <script></script>
     <link rel="stylesheet" href="style.css">
+    <script></script>
+
+    <style>
+
+    </style>
 </head>
 
 <body>
 
-    <div class="blur">
 
-        <h3>台灣天氣</h3>
-        <div id="weatherTaiwan"></div><!--id會被選取-->
-        <br>
+    <div class="center">
+
         <label>
-            請選擇城市:
+
+            <span>請選擇城市:</span>
             <select name="number" id="number" onchange="print_value();">
                 <option value="Taipei, TW">台北市</option>
                 <option value="Taoyuan, TW">桃園市</option>
                 <option value="Taichung, TW">台中市</option>
                 <option value="Tainan, TW">台南市</option>
                 <option value="KaohSiung, TW'">高雄市</option>
-
             </select>
+
         </label>
         <br><br>
+
         <div id="weather"></div><!--id會被選取-->
+        <br>
+        <br>
+        <h3>台灣天氣</h3>
+        <div id="weatherTaiwan"></div><!--id會被選取-->
 
     </div>
 
 
+
     <!--<div id="result"></div>-->
     <!-- <script></script>
-
     <div id="app">
-
         <select class="form-control" v-model="selected">
             <option v-for="item in inventory" :value="item.val" :key="item.id">
                 {{ item.val }}
             </option>
         </select>
-
         <p>
             顯示已選擇:{{ selected }} 
         </p>
-
     </div>
-
     <script src="index.vue"></script> <!--載入vue腳本-->
     <!--<script></script>-->
     <!-- <script src="index.js"></script> -->
+
+
 </body>
 
 </html>
