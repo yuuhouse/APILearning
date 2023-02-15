@@ -64,13 +64,13 @@ function makeTaiwanRequest() {
 
   xhr.open(
     'GET',
-    'https://api.openweathermap.org/data/2.5/forecast?q=Taiwan,tw&APPID=70c39d518ced5d61d33cdc9295f08f83&lang=zh-tw&lang=zh_tw&units=metric',
+    'https://api.openweathermap.org/data/2.5/forecast?q=Taiwan,tw&APPID=yourAPI&lang=zh-tw&lang=zh_tw&units=metric',
     true,
   )
   /* xhr.open('GET', urlFront + city + urlBack, true) //${variableName} */
   /* xhr.open(
       'GET',
-      'https://api.openweathermap.org/data/2.5/forecast?q=%city&APPID=70c39d518ced5d61d33cdc9295f08f83&lang=zh-tw&lang=zh_tw&units=metric',
+      'https://api.openweathermap.org/data/2.5/forecast?q=%city&APPID=yourAPI&lang=zh-tw&lang=zh_tw&units=metric',
       true,
     ) */
   xhr.send() //api key 記得要改成自己的
