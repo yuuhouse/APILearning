@@ -8,6 +8,7 @@ function print_value() {
   makeRequest() //重新發動函式 更新API內容
 }
 let urlFront = 'https://api.openweathermap.org/data/2.5/forecast?q='
+let urlBack = '&APPID=yourAPI&lang=zh-tw&units=metric'
 
 function makeRequest() {
   //六都天氣
