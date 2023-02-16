@@ -8,7 +8,8 @@ function print_value() {
   makeRequest() //重新發動函式 更新API內容
 }
 let urlFront = 'https://api.openweathermap.org/data/2.5/forecast?q='
-let urlBack = '&APPID=yourAPI&lang=zh-tw&units=metric'
+let APIKey = ''
+let urlBack = `&APPID=${APIKey}&lang=zh-tw&units=metric`
 
 function makeRequest() {
   //六都天氣
@@ -62,17 +63,16 @@ function makeTaiwanRequest() {
     weatherContainer.innerHTML = city + '<br/>' + weatherTitle + '<br/>' + temp //寫入以上的內容進html
   }
 
-  xhr.open(
-    'GET',
-    'https://api.openweathermap.org/data/2.5/forecast?q=Taiwan,tw&APPID=yourAPI&lang=zh-tw&lang=zh_tw&units=metric',
-    true,
-  )
-  /* xhr.open('GET', urlFront + city + urlBack, true) //${variableName} */
+  xhr.open('GET', urlFont + 'Taiwan,tw' + urlBack, true)
+
+
+  /* xhr.open('GET', urlFront + city + urlBack, true) //`${variableName}` */
   /* xhr.open(
       'GET',
       'https://api.openweathermap.org/data/2.5/forecast?q=%city&APPID=yourAPI&lang=zh-tw&lang=zh_tw&units=metric',
       true,
     ) */
+
   xhr.send() //api key 記得要改成自己的
 }
 makeTaiwanRequest()
