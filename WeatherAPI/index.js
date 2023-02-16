@@ -63,7 +63,7 @@ function makeTaiwanRequest() {
     weatherContainer.innerHTML = city + '<br/>' + weatherTitle + '<br/>' + temp //寫入以上的內容進html
   }
 
-  xhr.open('GET', urlFont + 'Taiwan,tw' + urlBack, true)
+  xhr.open('GET', urlFront + 'Taiwan, TW' + urlBack, true)
 
 
   /* xhr.open('GET', urlFront + city + urlBack, true) //`${variableName}` */
