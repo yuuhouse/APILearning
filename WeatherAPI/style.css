@@ -9,7 +9,7 @@
 }
 
 body {
-  background: url('/img/bg2_farfog.jpg') no-repeat center;
+  background: url('img/bg2_farfog.jpg') no-repeat center;
   height: 100vh;/*vh是viewport height的意思*/
 }
 
@@ -67,7 +67,6 @@ p {/* 底層文字 */
   bottom: 0;/*鎖定在底層*/
   position: fixed;/*鎖定在底層*/
   color: rgba(124, 124, 113, 0.678);
-  
 }
 
 
