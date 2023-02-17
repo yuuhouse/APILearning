@@ -13,16 +13,11 @@ body {
   height: 100vh;/*vh是viewport height的意思*/
 }
 
-p {/* 底層文字 */
-  bottom: 0;/*鎖定在底層*/
-  position: fixed;/*鎖定在底層*/
-  color: rgba(124, 124, 113, 0.678);
-}
+
 
 /*中文區*/
 select {
   /*目前選項*/
-  
   border-radius: 0.5em;
   background-color: rgb(39, 31, 31);
 }
@@ -66,6 +61,13 @@ h3 {
 }
 #weatherTaiwan {
   font-size: 2rem;
+}
+
+p {/* 底層文字 */
+  bottom: 0;/*鎖定在底層*/
+  position: fixed;/*鎖定在底層*/
+  color: rgba(124, 124, 113, 0.678);
+  
 }
 
 
