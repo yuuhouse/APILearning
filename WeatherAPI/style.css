@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 * {
-  margin: 0px;
-  padding: 0px;
+  /* margin: 0px;
+  padding: 0px; */
   box-sizing: border-box;
 }
 
@@ -13,27 +13,36 @@ body {
   height: 100vh;
 }
 
+p {/* 底層文字 */
+  bottom: 0;
+  position: fixed;/*鎖定在底層*/
+  color: rgba(124, 124, 113, 0.678);
+}
+
 /*中文區*/
-span {/*請選擇城市*/
+select {
+  /*目前選項*/
+  
+  border-radius: 0.5em;
+  background-color: rgb(39, 31, 31);
+}
+
+span,
+select,
+option {
   font-size: 2rem;
   font-family: 'Noto Sans TC', sans-serif;
+  color: antiquewhite;
+  /* background-color: red; */ /*for test*/
 }
-select {/*目前選項*/
-  margin-left: auto;
-  margin-top: auto;
-  font-size: 2rem;
-  font-family: 'Noto Sans TC', sans-serif;
-}
-option {/*下拉選單內的選項*/
-  font-size: 2rem;
-  font-family: 'Noto Sans TC', sans-serif;
-}
+
 h3 {
   /*台灣天氣*/
   margin: auto;
   margin-bottom: 0.3em;
   font-size: 2.5rem;
   font-family: 'Noto Sans HK', sans-serif;
+  color: antiquewhite;
 }
 /*中文區*/
 
@@ -46,17 +55,17 @@ h3 {
   text-align: center;
 }
 
+#weather,
+#weatherTaiwan {
+  font-family: 'Bebas Neue', cursive;
+  color: antiquewhite;
+}
+
 #weather {
   font-size: 3rem;
-  font-family: 'Bebas Neue', cursive;
 }
-
 #weatherTaiwan {
   font-size: 2rem;
-  font-family: 'Bebas Neue', cursive;
 }
 
-p{
-  bottom: 0;
-  position: fixed;
-}
+
