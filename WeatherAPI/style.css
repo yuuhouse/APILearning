@@ -10,7 +10,7 @@
 
 body {
   background: url('/img/bg2_farfog.jpg') no-repeat center;
-  height: 100vh;
+  height: 100vh;/*vh是viewport height的意思*/
 }
 
 p {/* 底層文字 */
